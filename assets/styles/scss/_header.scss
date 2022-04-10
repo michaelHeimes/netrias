@@ -1,17 +1,24 @@
+body.logged-in {
+	header.header {
+		top: 32px;
+	}
+}
 header.header {
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	right: 0;
 	transition: transform .5s ease;
 	
 	.top-bar-wrap {
+		padding-right: 0;
 		background-color: $topbar-background;
 	}
 	
-	#top-bar-menu {
-		padding-top: .2rem;
-		padding-bottom: .2rem;
-		
+	#top-bar-menu {		
 		@include breakpoint(tablet) {
-			padding-top: .35rem;
-			padding-bottom: 0;
+
 		}
 		
 		.top-bar-left {
@@ -30,7 +37,6 @@ header.header {
 					padding: 0;
 					display: inline-block;
 					position: relative;
-				    top: -20px;
 				}
 			}
 			
@@ -39,23 +45,27 @@ header.header {
 		#main-nav {
 			align-items: center;
 			>li {
-				margin: 1.05rem 0 1.3rem 1.8rem;
+				margin: 0;
 				
 				a {
 					color: $white;
-					font-size: rem-calc(18);
 					text-transform: uppercase;
-					letter-spacing: .075px;
-					
+					font-weight: 800;
+					line-height: 1.25;
 					@include breakpoint(large) {
-						font-size: rem-calc(22);
+						padding: 1.9rem 1rem 1.25rem;
 					}
-					
-				&:hover {
-					text-decoration: underline;
+					@include breakpoint(xlarge) {
+						padding: 2.3rem 1.7rem 1.7rem;
+					}					
+					@include breakpoint(xxlarge) {
+						padding: 3.15rem 2.6rem 2.6rem;
+					}
 				}
-					
-				}
+				
+			&.green-button-link a {
+				background-color: $primary;
+			}
 				
 			&.menu-item-has-children {
 				margin-top: -.4rem;

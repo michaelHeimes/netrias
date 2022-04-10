@@ -1,6 +1,8 @@
+
+   
 <?php
 /*
-Template Name: Full Width (No Sidebar)
+Template Name: Home
 */
 
 get_header(); ?>
@@ -9,7 +11,7 @@ get_header(); ?>
 	
 		<div class="inner-content grid-x grid-margin-x grid-padding-x">
 	
-		    <main class="main small-12 medium-12 large-12 cell" role="main">
+			<main class="main small-12 medium-12 large-12 cell" role="main">
 				
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -18,7 +20,7 @@ get_header(); ?>
 				<?php endwhile; endif; ?>							
 
 			</main> <!-- end #main -->
-		    
+			
 		</div> <!-- end #inner-content -->
 	
 	</div> <!-- end #content -->

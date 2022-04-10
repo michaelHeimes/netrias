@@ -3,7 +3,54 @@
 Stylesheet: Global Stylesheet
 
 *************************************************/
+/*********************
+GLOBAL STYLES
+*********************/
+.has-bg {
+	position: relative;
+	overflow: hidden;
+	.bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.grid-container {
+		position: relative;
+	}
+}
 
+.green-text {
+	color: $primary !important;
+}
+
+.white {
+	color: $white;
+}
+
+.secondary-bg {
+	background-color: $secondary;
+}
+
+button,
+.button {
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: .2em;
+}
+
+/*********************
+TYPOGRAPHY
+*********************/
+.large-copy,
+.large-copy p {
+	font-size: rem-calc(22);
+	line-height: 1.4; 
+}
 /*********************
 POSTS & CONTENT STYLES
 *********************/

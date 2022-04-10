@@ -1,0 +1,16 @@
+.page-template-page-home {
+	.banner {
+		min-height: 100vh;
+		padding-top: 15rem;
+		padding-bottom: 15rem;
+		.inner {
+			max-width: 800px;
+			h1 {
+				font-size: rem-calc(52);
+			}
+			.link-wrap {
+				padding-top: 1.4rem;
+			}
+		}
+	}
+}

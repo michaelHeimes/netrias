@@ -56,7 +56,7 @@ CSS file.
 // @include foundation-reveal;
 // @include foundation-switch;
 // @include foundation-table;
-// @include foundation-tabs;
+@include foundation-tabs;
 // @include foundation-thumbnail;
 // @include foundation-title-bar;
 // @include foundation-tooltip;
@@ -64,8 +64,16 @@ CSS file.
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 
+// Vendor
+@import "swiper";
+
 // Import your custom styles
 @import "global";
 @import "header";
+@import "footer";
 @import "home";
 @import "buttons";
+@import "testimonials";
+@import "news-events";
+@import "page-banner";
+@import "tabs";

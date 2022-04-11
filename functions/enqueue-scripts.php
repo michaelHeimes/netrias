@@ -1,7 +1,10 @@
 <?php
 function site_scripts() {
   global $wp_styles; // Call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
-        
+
+    // Adding Swiper file in the footer
+  wp_enqueue_script( 'swiper-js', get_template_directory_uri() . '/assets/vendor/swiper/swiper-bundlle-min.js', array( 'jquery' ), filemtime(get_template_directory() . '/assets/vendor/swiper/swiper-bundlle-min.js'), true );
+          
     // Adding scripts file in the footer
     wp_enqueue_script( 'site-js', get_template_directory_uri() . '/assets/scripts/scripts.js', array( 'jquery' ), filemtime(get_template_directory() . '/assets/scripts/js'), true );
    

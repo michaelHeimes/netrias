@@ -23,15 +23,21 @@ GLOBAL STYLES
 		position: relative;
 	}
 }
-
 .green-text {
 	color: $primary !important;
 }
-
 .white {
 	color: $white;
 }
-
+.primary {
+	color: $primary;
+}
+.white-bg {
+	background-color: $white;
+}
+.gray-bg {
+	background-color: $medium-gray;
+}
 .secondary-bg {
 	background-color: $secondary;
 }
@@ -43,13 +49,31 @@ button,
 	letter-spacing: .2em;
 }
 
+.grid-card {
+	.inner {
+		box-shadow: 0px 4px 20px rgba(84, 85, 86, 0.15);
+		border-radius: 5px;
+		overflow: hidden;
+	}
+	margin-bottom: 20px;
+}
+
 /*********************
 TYPOGRAPHY
 *********************/
-.large-copy,
-.large-copy p {
+.large-text,
+.large-text p {
 	font-size: rem-calc(22);
 	line-height: 1.4; 
+}
+.small-caps {
+	font-size: rem-calc(16);
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+}
+a:hover {
+	transition: color .3s ease;
+	color: $primary-dark;
 }
 /*********************
 POSTS & CONTENT STYLES
@@ -460,7 +484,6 @@ FOOTER STYLES
 *********************/
 .footer {
 	clear: both;
-	margin-top: 1em;
 }
 	
 /*********************

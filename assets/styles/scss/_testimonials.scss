@@ -1,0 +1,27 @@
+.testimonials {
+	overflow: hidden;
+	.left {
+		position: relative;
+		z-index: 2;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			background-color: $secondary;
+			width: 50vw;
+			left: -50vw;
+		}
+	}
+	.testimonial-slider {
+		max-width: 630px;
+		.swiper-slide {
+			border-radius: 5px;
+			.img-wrap {
+				border-radius: 100%;
+				overflow: hidden;
+				max-width: 106px;
+			}
+		}
+	}
+}

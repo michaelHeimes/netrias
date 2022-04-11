@@ -8,7 +8,7 @@
  */			
  ?>
 					
-				<footer class="footer secondary-bg" role="contentinfo">
+				<footer class="footer secondary-bg white" role="contentinfo">
 					
 					<div class="inner-footer grid-x grid-padding-x align-justify">
 						<div class="cell small-12 medium-6 tablet-shrink">
@@ -20,13 +20,13 @@
 							</div>
 							<?php endif; ?>
 							<p class="address">
-								<a href="<?php the_field('directions_url', 'option');?>" target="_blank">
+								<a class="white" href="<?php the_field('directions_url', 'option');?>" target="_blank">
 									<?php the_field('address', 'option');?>
 								</a>
 							</p>
 							<p class="email-phone">
-								<a href="tel:<?php the_field('phone_number', 'option');?>"><?php the_field('phone_number', 'option');?></a><br>
-								<a href="mailto:<?php the_field('email_address', 'option');?>"><?php the_field('email_address', 'option');?></a>
+								<a class="white" href="tel:<?php the_field('phone_number', 'option');?>"><?php the_field('phone_number', 'option');?></a><br>
+								<a  class="white"href="mailto:<?php the_field('email_address', 'option');?>"><?php the_field('email_address', 'option');?></a>
 							</p>
 						</div>						
 						<div class="cell small-12 medium-6 tablet-shrink">
@@ -38,7 +38,7 @@
 						
 					<div class="post-footer grid-x grid-padding-x align-justify">
 						<div class="cell small-12 medium-6 tablet-shrink">
-							<p class="source-org copyright">&copy; <?php echo date('Y'); ?> Netrias, LLC. All Rights Reserved.</p>
+							<p class="white source-org copyright">&copy; <?php echo date('Y'); ?> Netrias, LLC. All Rights Reserved.</p>
 						</div>
 						<div class="cell small-12 medium-6 tablet-shrink">
 							<?php joints_social_links(); ?>

@@ -32,12 +32,40 @@ jQuery( document ).ready(function($) {
 		});
 
 	}
+	
+	_app.testimonials = function() {
+		if($('.testimonials').length) {
+			const swiper = new Swiper('.testimonial-slider', {
+				// Optional parameters
+				loop: true,
+				loopAdditionalSlides: 3,
+				slidesPerView: 1,
+				spaceBetween: 20,
+				speed: 400,
+			
+				// If we need pagination
+				pagination: {
+					el: '.swiper-pagination',
+				},
+				
+				// Navigation arrows
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		}
+	}
 			
 	_app.init = function() {
 		
 		// Standard Functions
 		_app.emptyParentLinks();
 		_app.fixed_nav_hack();
+		
+		// Theme Functions
+		_app.testimonials();
+		
 	}
 
 

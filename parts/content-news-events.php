@@ -26,7 +26,7 @@
 				<div class="inner white-bg">
 					<?php if( (get_field('type') == 'news')):?>
 						<div class="thumb-wrap">
-							<?php echo get_the_post_thumbnail( $post_id, 'medium' ); ;?>
+							<?php echo get_the_post_thumbnail( $post_id, 'full' ); ;?>
 						</div>
 						<div class="title-wrap">
 							<h3><?php the_title();?></h3>

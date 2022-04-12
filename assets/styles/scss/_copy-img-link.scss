@@ -1,0 +1,26 @@
+.copy-img-link {
+	overflow: hidden;
+	padding-top: 3.9rem;
+	padding-bottom: 1.75rem;
+	.left {
+		padding-top: 2.75rem;
+		margin-bottom: 2rem;
+	}
+	h3.h2 {
+		margin-bottom: 1.1rem;
+	}
+	.link-wrap {
+		padding-top: 1.15rem;
+	}
+	.img-wrap {
+		img {
+			transform: translateX($grid-container-padding);
+			@include breakpoint(xlarge) {
+				transform: translateX(6vw);
+			}
+			@include breakpoint(xxlarge) {
+				transform: translateX(7vw);
+			}
+		}
+	}
+}

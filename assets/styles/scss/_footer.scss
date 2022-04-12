@@ -1,7 +1,32 @@
 footer.footer {
+	padding-top: 3.35rem;
+	.footer-logo {
+		padding-bottom: 3.4rem;
+	}
 	.address {
+		padding-bottom: 0.3rem;
 		a {
 			display: block;
 		}
+	}
+	#footer-links {
+		li {
+			margin: 0.5rem 0 0.75rem;
+			flex: 0 0 50%;
+			@include breakpoint(tablet) {
+				flex: 0 0 33.333%;
+			}
+			a {
+				display: inline-block;
+				text-transform: uppercase;
+				color: $white;
+				line-height: 1.25;
+				font-weight: 800;
+			}
+		}
+	}
+	.post-footer {
+		padding-top: 2.2rem;
+		padding-bottom: 3.18rem;
 	}
 }

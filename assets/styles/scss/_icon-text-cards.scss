@@ -1,0 +1,19 @@
+.icon-text-cards {
+	padding-top: 3.55rem;
+	padding-bottom: 2rem;
+	.single-card {
+		.inner {
+			max-width: 350px;
+			margin: 0 auto 2rem;
+			.icon-wrap {
+				margin-bottom: 1.4rem;
+			}
+			h5 {
+				margin-bottom: 0.7rem;
+			}
+			a span {
+				margin-right: .7rem;
+			}
+		}
+	}
+}

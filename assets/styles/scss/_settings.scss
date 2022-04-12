@@ -73,7 +73,7 @@ $secondary-light: #7D8BC5;
  
 
 $global-font-size: 100%;
-$global-width: rem-calc(1275);
+$global-width: rem-calc(1310);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: $primary,
@@ -812,7 +812,7 @@ $tab-item-padding: 1.25rem 1.5rem;
 $tab-content-background: transparent;
 $tab-content-border: transparent;
 $tab-content-color: $body-font-color;
-$tab-content-padding: 1rem 0;
+$tab-content-padding: 2.5rem 0 2.8rem;
 
 // 52. Thumbnail
 // -------------
@@ -871,7 +871,7 @@ $grid-margin-gutters: (
   medium: 20px
 );
 $grid-padding-gutters: $grid-margin-gutters;
-$grid-container-padding: $grid-padding-gutters;
+$grid-container-padding: 32px;
 $grid-container-max: $global-width;
 $xy-block-grid-max: 8;
 

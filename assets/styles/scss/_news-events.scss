@@ -1,3 +1,35 @@
 .news-events {
-	
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+	.top {
+		padding-bottom: 1.25rem;
+	}
+	h2 {
+		margin-bottom: 2.7rem;
+	}
+	.grid-card {
+		.title-wrap {
+			padding: 1.2rem 1.2rem 1.2rem;
+		}
+		.title-dates,
+		.description {
+			padding: 2.25rem 1.2rem 0.9rem;
+		}
+		.title-dates {
+			position: relative;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 1.2rem;
+			width: 48px;
+			height: 3px;
+			background-color: $primary;
+		}
+		}
+		.description {
+				
+		}
+	}
 }

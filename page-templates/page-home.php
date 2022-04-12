@@ -23,10 +23,10 @@ get_header(); ?>
 				
 				<?php get_template_part('parts/content', 'testimonials');?>
 				
-				<section class="careers">
+				<section class="copy-img-link">
 					<div class="grid-container">
 						<div class="grid-x grid-padding-x">
-							<div class="left cell small-12 medium-6 large-5">
+							<div class="left cell small-12 medium-6">
 								<h2 class="small-caps">
 									<?php the_field('careers_small_caps_heading');?>
 								</h2>
@@ -34,8 +34,19 @@ get_header(); ?>
 								<div class="copy-wrap large-text">
 									<?php the_field('careers_copy');?>
 								</div>
+								<?php 
+								$link = get_field('careers_button_link');
+								if( $link ): 
+									$link_url = $link['url'];
+									$link_title = $link['title'];
+									$link_target = $link['target'] ? $link['target'] : '_self';
+									?>
+								<div class="link-wrap">
+									<a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+								</div>
+								<?php endif; ?>
 							</div>
-							<div class="right cell small-12 medium-6 large-6 large-offset-1">
+							<div class="right cell small-12 medium-6">
 								<?php 
 								$image = get_field('careers_image');
 								if( !empty( $image ) ): ?>

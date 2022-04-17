@@ -5,7 +5,9 @@
 		padding-bottom: 1.25rem;
 	}
 	h2 {
-		margin-bottom: 2.7rem;
+		@include breakpoint(medium) {
+			margin-bottom: 2.7rem;
+		}
 	}
 	.grid-card {
 		.title-wrap {

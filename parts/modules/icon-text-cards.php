@@ -1,7 +1,7 @@
 <?php if( have_rows('centered_icontext_cards') ):?>
 <section class="icon-text-cards">
 	<div class="grid-container">
-		<div class="grid-x grid-padding-x small-up-1 medium-up-2 tablet-up-3">
+		<div class="grid-x grid-padding-x small-up-1 medium-up-2 tablet-up-3 align-center">
 		<?php while ( have_rows('centered_icontext_cards') ) : the_row();?>	
 		<div class="single-card cell grid-x flex-dir-column align-middle">
 			<div class="inner text-center">

@@ -1,11 +1,11 @@
 <section class="news-events gray-bg">
 	<div class="grid-container">
-		<div class="top grid-x grid-padding-x">
-			<div class="cell auto">
-				<h3 class="h2">Explore what's new at Netrias.</h2>
+		<div class="top grid-x grid-padding-x medium-flex-dir-row-reverse">
+			<div class="cell small-12 medium-shrink">
+				<h2 class="small-caps"><?php the_field('news_small_caps_heading', 'option');?></h2>
 			</div>
-			<div class="cell shrink">
-				<h2 class="small-caps">News & Events</h2>
+			<div class="cell small-12 medium-auto">
+				<h3 class="h2"><?php the_field('news_heading', 'option');?></h3>
 			</div>
 		</div>
 		<div class="card-grid grid-x grid-padding-x small-up-1 medium-up-2 tablet-up-4">

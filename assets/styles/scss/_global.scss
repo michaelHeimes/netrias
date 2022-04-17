@@ -51,6 +51,7 @@ button,
 
 .grid-card {
 	.inner {
+		width: 100%;
 		box-shadow: 0px 4px 20px rgba(84, 85, 86, 0.15);
 		border-radius: 5px;
 		overflow: hidden;
@@ -72,9 +73,19 @@ TYPOGRAPHY
 	text-transform: uppercase;
 	margin-bottom: 1.3rem;
 }
-a:hover {
+a {
 	transition: color .3s ease;
+	svg g {
+		transition: stroke .3s ease;
+	}
+}
+a:hover {
 	color: $primary-dark;
+	svg {
+		g {
+			stroke: $primary-dark;;
+		}
+	}
 }
 /*********************
 POSTS & CONTENT STYLES

@@ -1,6 +1,16 @@
 body.logged-in {
 	header.header {
-		top: 32px;
+		top: 46px;
+		@media screen and (min-width: 783px) {
+			top: 32px;
+		}
+	}
+	ul#offcanvas-nav {
+		top: 46px;
+		position: relative;
+		@media screen and (min-width: 783px) {
+			top: 32px;
+		}
 	}
 }
 header.header {
@@ -10,6 +20,10 @@ header.header {
 	left: 0;
 	right: 0;
 	transition: transform .5s ease;
+	padding: 0 1rem;
+	@include breakpoint(large) {
+		padding-right: 0;
+	}
 	
 	.top-bar-wrap {
 		padding-right: 0;
@@ -144,4 +158,17 @@ header.header {
 	
 	}
 	
+}
+
+ul#offcanvas-nav.menu {
+	.active>a,
+	.menu .is-active>a {
+		color: $primary;
+	}
+	li {
+		&.green-button-link a {
+			background-color: $primary;
+			color: $white;
+		}
+	}
 }

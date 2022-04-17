@@ -1,0 +1,35 @@
+.home-hero {
+	min-height: 100vh;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	.inner {
+		max-width: 800px;
+		h1 {
+			font-size: rem-calc(52);
+		}
+		.link-wrap {
+			padding-top: 1.4rem;
+		}
+	}
+	.bottom {
+		a {
+			color: $white;
+		}
+		.left {
+			padding-right: 1.375rem;
+			.title {
+				font-weight: 800;
+				font-size: rem-calc(20px);
+			}
+			.link {
+				
+			}
+		}
+		.img-wrap {
+			border: 1px solid #ADB5BD;
+			max-width: 121px;
+			border-radius: 5px;
+			overflow: hidden;
+		}
+	}
+}

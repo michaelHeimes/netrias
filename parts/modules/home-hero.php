@@ -1,14 +1,14 @@
-<section class="hero-banner banner has-bg grid-x align-middle">
-	<div class="bg" style="background-image: url(<?php the_field('banner_background_image');?>);"></div>
+<section class="home-hero banner has-bg grid-x align-middle">
+	<div class="bg" style="background-image: url(<?php the_sub_field('background_image');?>);"></div>
 	<div class="cell">
 		<div class="grid-container">
 			<div class="grid-x grid-padding-x">
 				<div class="cell small-12">
 					<div class="inner">
-						<h1 class="white"><?php the_field('banner_heading');?></h1>
-						<p class="white large-text"><?php the_field('banner_text');?></p>
+						<h1 class="white"><?php the_sub_field('heading');?></h1>
+						<p class="white large-text"><?php the_sub_field('text');?></p>
 						<?php 
-						$link = get_field('banner_button_link');
+						$link = get_sub_field('banner_button_link');
 						if( $link ): 
 							$link_url = $link['url'];
 							$link_title = $link['title'];

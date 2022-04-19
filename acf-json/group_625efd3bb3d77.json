@@ -1,0 +1,75 @@
+{
+    "key": "group_625efd3bb3d77",
+    "title": "Posts",
+    "fields": [
+        {
+            "key": "field_625efdc8d82b5",
+            "label": "Disable Single Post",
+            "name": "disable_single_post",
+            "type": "true_false",
+            "instructions": "Check this if this post links to an external website.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_625efdf0d82b6",
+            "label": "External Link URL",
+            "name": "external_link_url",
+            "type": "url",
+            "instructions": "Leave this empty if the post doesn't have an internal post and ALSO does not link to an external website.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_625efdc8d82b5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "news_event"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "resource"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1650398135
+}

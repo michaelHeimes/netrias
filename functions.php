@@ -43,6 +43,9 @@ require_once(get_template_directory().'/functions/acf-options.php');
 // Disable Gutenberg
 require_once(get_template_directory().'/functions/disable-gutenberg.php'); 
 
+// Disable Single Post
+require_once(get_template_directory().'/functions/no-single-post.php'); 
+
 // Add Page Slug to Body Class
 // require_once(get_template_directory().'/functions/page-slug-body-class.php');
 

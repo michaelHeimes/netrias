@@ -8,7 +8,7 @@
 				<?php 
 				$image = get_sub_field('icon');
 				if( !empty( $image ) ): ?>
-				<div class="icon-wrap">
+				<div class="icon-wrap grid-x align-center align-middle">
 					<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 				</div>
 				<?php endif; ?>

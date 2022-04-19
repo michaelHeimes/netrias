@@ -1,6 +1,6 @@
 .two-col-ctas {
 	padding-top: 5.05rem;
-	padding-bottom: 5rem;
+	padding-bottom: 1rem;
 	.single-cta {
 		margin-bottom: 3rem;
 		.inner {
@@ -11,6 +11,9 @@
 		}
 		.left {
 			margin-bottom: 1.5rem;
+		}
+		a {
+			font-weight: 800;
 		}
 	}
 }

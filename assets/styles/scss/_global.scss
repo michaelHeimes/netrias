@@ -18,6 +18,10 @@ GLOBAL STYLES
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
+		&.mask {
+			background-color: #000;
+			opacity: .5;
+		}
 	}
 	.grid-container {
 		position: relative;

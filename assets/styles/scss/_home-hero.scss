@@ -1,9 +1,15 @@
 .home-hero {
-	min-height: 100vh;
-	padding-top: 10rem;
-	padding-bottom: 10rem;
 	.inner {
+		min-height: 100vh;
+		padding-top: 10rem;
+		padding-bottom: 6.5rem;
+		@include breakpoint(medium) {
+			padding-top: 17rem;
+		}
+	}
+	.text-wrap{
 		max-width: 800px;
+		padding-bottom: 3rem;
 		h1 {
 			font-size: rem-calc(52);
 		}

@@ -1,5 +1,6 @@
 <section class="page-banner banner has-bg grid-x align-middle">
 	<div class="bg" style="background-image: url(<?php the_sub_field('background_image');?>);"></div>
+	<div class="bg mask"></div>
 	<div class="cell">
 		<div class="grid-container">
 			<div class="grid-x grid-padding-x">

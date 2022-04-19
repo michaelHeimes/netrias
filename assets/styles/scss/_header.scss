@@ -20,7 +20,7 @@ header.header {
 	left: 0;
 	right: 0;
 	transition: transform .5s ease;
-	padding: 0 1rem;
+	padding: 0 2.6rem;
 	@include breakpoint(large) {
 		padding-right: 0;
 	}
@@ -75,7 +75,24 @@ header.header {
 					@include breakpoint(xxlarge) {
 						padding: 3.15rem 2.6rem 2.6rem;
 					}
+					span {
+						display: inline-block;
+						position: relative;
+						&:after {
+							content: '';
+							display: block;
+							width: 100%;
+							background-color: transparent;
+							height: 2px;
+						}
+					}
 				}
+				
+			&.current-menu-item {
+				a span:after {
+					background-color: $white;
+				}	
+			}
 				
 			&.green-button-link a {
 				background-color: $primary;

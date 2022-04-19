@@ -15,20 +15,37 @@
 			while ( $loop->have_posts() ) : $loop->the_post();?>
 			
 			<div class="grid-card cell grid-x flex-direction-column">
-				<div class="inner white-bg grid-x flex-direction-column">
-					<div class="top cell" data-equalizer-watch>
-						<div class="date">
-							<?php echo get_the_date( 'm', $post->ID );?>.<?php echo get_the_date( 'd', $post->ID );?>.<?php echo get_the_date( 'y', $post->ID );?>
+
+					<div class="inner white-bg grid-x flex-direction-column">
+						<div class="top cell" data-equalizer-watch>
+							<div class="date">
+								<?php echo get_the_date( 'm', $post->ID );?>.<?php echo get_the_date( 'd', $post->ID );?>.<?php echo get_the_date( 'y', $post->ID );?>
+							</div>
+							<h5><?php the_title();?></h5>
 						</div>
-						<h5><?php the_title();?></h5>
+			
+						<?php 
+							$disable_post = get_field('disable_single_post');
+							$ext_link = get_field('external_link_url');
+						?>
+						<?php if( $disable_post == 'true' && !empty($ext_link) ):?>
+						<div class="bottom cell grid-x align-middle">
+							<a href="<?php echo $ext_link;?>" rel="bookmark" title="<?php the_title_attribute(); ?>" taget="_blank">
+								<span><strong>Read more</strong></span>
+								<?php get_template_part('parts/svg','chev-right');?>
+							</a>
+						</div>
+						<?php elseif( $disable_post == 'true' && empty($ext_link) ):?>
+						
+						<?php else:?>
+						<div class="bottom cell grid-x align-middle">
+							<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+								<span><strong>Read more</strong></span>
+								<?php get_template_part('parts/svg','chev-right');?>
+							</a>
+						</div>
+						<?php endif;?>
 					</div>
-					<div class="bottom cell grid-x align-middle">
-						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-							<span><strong>Read more</strong></span>
-							<?php get_template_part('parts/svg','chev-right');?>
-						</a>
-					</div>
-				</div>
 			</div>
 				
 			<?php
@@ -40,3 +57,6 @@
 		</div>
 	</div>
 </section>
+
+
+

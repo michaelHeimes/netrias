@@ -22,55 +22,54 @@
 			
 			while ( $loop->have_posts() ) : $loop->the_post();?>
 			
-			<div class="grid-card cell grid-x flex-direction-column">
-				<?php 
-					$disable_post = get_field('disable_single_post');
-					$ext_link = get_field('external_link_url');
-				?>
-				<?php if( $disable_post == 'true' && !empty($ext_link) ):?>
-				<a class="grid-x" href="<?php echo $ext_link;?>" target="_blank" title="<?php the_title_attribute(); ?>">
-				
-				<?php elseif( $disable_post == 'true' && empty($ext_link) ):?>
-				
-				<?php else:?>
-				<a class="grid-x" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-				<?php endif;?>
-				
-					<div class="inner white-bg">
-						<?php if( (get_field('type') == 'news')):?>
-							<div class="thumb-wrap">
-								<?php echo get_the_post_thumbnail( $post_id, 'full' ); ;?>
-							</div>
-							<div class="title-wrap">
-								<h3><?php the_title();?></h3>
-							</div>
-						<?php endif;?>
-						<?php if( (get_field('type') == 'event')):?>
-							<div class="title-dates">
-								<h3><?php the_title();?></h3>
-								<div class="h3"><?php the_field('dates');?></div>
-							</div>
-							<div class="description">
-								<?php the_field('description');?>
-							</div>
-						<?php endif;?>
-					</div>
-				<?php if( $disable_post == 'true' && !empty($ext_link) ):?>
-				</a>
+			<div class="grid-card cell<?php if (has_post_thumbnail( $post->ID ) ): ?> has-thumb<?php endif;?>">
+				<article id="post-<?php the_ID(); ?>" <?php post_class('grid-x flex-direction-column'); ?> role="article">
+					<?php 
+						$disable_post = get_field('disable_single_post');
+						$ext_link = get_field('external_link_url');
+					?>
+					<?php if( $disable_post == 'true' && !empty($ext_link) ):?>
+					<a class="grid-x" href="<?php echo $ext_link;?>" target="_blank" title="<?php the_title_attribute(); ?>">
 					
-				<?php elseif( $disable_post == 'true' && empty($ext_link) ):?>
+					<?php elseif( $disable_post == 'true' && empty($ext_link) ):?>
 					
-				<?php else:?>
+					<?php else:?>
+					<a class="grid-x" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+					<?php endif;?>
+					
+						<div class="inner white-bg">
+							<?php if (has_post_thumbnail( $post->ID ) ): ?>
+								<div class="thumb-wrap">
+									<?php echo get_the_post_thumbnail( $post_id, 'news-thumb' ); ;?>
+								</div>
+								<div class="title-wrap">
+									<h3 class="h5"><?php the_title();?></h3>
+								</div>
+							<?php else:?>
+								<div class="title-dates">
+									<h3 class="h5"><?php the_title();?></h3>
+									<div class="h3"><?php the_field('dates');?></div>
+								</div>
+								<div class="description">
+									<p><?php the_field('description');?></p>
+								</div>
+							<?php endif;?>
+						</div>
+					<?php if( $disable_post == 'true' && !empty($ext_link) ):?>
 					</a>
-				<?php endif;?>
+						
+					<?php elseif( $disable_post == 'true' && empty($ext_link) ):?>
+						
+					<?php else:?>
+					</a>
+					<?php endif;?>
+				</article>
 			</div>
-				
+					
 			<?php
 			endwhile;
-		
 		endif;
 		wp_reset_postdata(); 
 		?>							
-		</div>
 	</div>
 </section>

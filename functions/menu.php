@@ -16,9 +16,9 @@ function joints_top_nav() {
 		'menu_id'			=> 'main-nav',					// Adding custom nav id
 		'menu_class'		=> 'medium-horizontal menu',	// Adding custom nav class
 		'items_wrap'		=> '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown" data-submenu-toggle="true" data-hover-delay="0" data-closing-time="0">%3$s</ul>',
-		'theme_location'	=> 'main-nav',	
+		'theme_location'	=> 'main-nav',	// Where it's located in the theme
 		'link_before'    => '<span>',
-		'link_after'     => '</span>'	,			// Where it's located in the theme
+		'link_after'     => '</span>',			
 		'depth'				=> 5,							// Limit the depth of the nav
 		'fallback_cb'		=> false,						// Fallback function (see below)
 		'walker'			=> new Topbar_Menu_Walker()
@@ -41,6 +41,8 @@ function joints_off_canvas_nav() {
 		'menu_class'		=> 'vertical menu accordion-menu',	// Adding custom nav class
 		'items_wrap'		=> '<ul id="%1$s" class="%2$s" data-accordion-menu>%3$s</ul>',
 		'theme_location'	=> 'offcanvas-nav',					// Where it's located in the theme
+		'link_before'    => '<span>',
+		'link_after'     => '</span>',	
 		'depth'				=> 5,								// Limit the depth of the nav
 		'fallback_cb'		=> false,							// Fallback function (see below)
 		'walker'			=> new Off_Canvas_Menu_Walker()
@@ -61,6 +63,8 @@ function joints_footer_links() {
 		'menu_id'			=> 'footer-links',		// Adding custom nav id
 		'menu_class'		=> 'menu',				// Adding custom nav class
 		'theme_location'	=> 'footer-links',		// Where it's located in the theme
+		'link_before'    => '<span>',
+		'link_after'     => '</span>',	
 		'depth'				=> 0,					// Limit the depth of the nav
 		'fallback_cb'		=> ''					// Fallback function
 	));

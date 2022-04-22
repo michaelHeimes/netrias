@@ -11,7 +11,8 @@
 				<footer class="footer secondary-bg white" role="contentinfo">
 					<div class="grid-container">
 						<div class="inner-footer grid-x grid-padding-x align-justify">
-							<div class="cell small-12 medium-6 tablet-auto">
+							
+							<div class="cell small-12 medium-6 tablet-4 xlarge-auto">
 								<?php 
 								$image = get_field('footer_logo', 'option');
 								if( !empty( $image ) ): ?>
@@ -31,19 +32,24 @@
 									<a class="white" href="tel:<?php the_field('phone_number', 'option');?>"><?php the_field('phone_number', 'option');?></a><br>
 									<a  class="white"href="mailto:<?php the_field('email_address', 'option');?>"><?php the_field('email_address', 'option');?></a>
 								</p>
-							</div>						
-							<div class="cell small-12 medium-6 tablet-shrink show-for-medium">
+								<div class="social-links-wrap mobile hide-for-medium">
+									<?php joints_social_links(); ?>
+								</div>
+							</div>		
+
+							<div class="cell small-12 medium-6 tablet-8 xlarge-shrink show-for-medium">
 								<nav role="navigation">
 	    							<?php joints_footer_links(); ?>
 	    						</nav>
 	    					</div>
+							
 						</div>
 							
 						<div class="post-footer grid-x grid-padding-x align-justify">
 							<div class="cell small-12 medium-6 tablet-shrink">
 								<p class="white source-org copyright">&copy; <?php echo date('Y'); ?> Netrias, LLC. All Rights Reserved.</p>
 							</div>
-							<div class="cell small-12 medium-6 tablet-shrink">
+							<div class="social-links-wrap cell small-12 medium-6 tablet-shrink show-for-medium">
 								<?php joints_social_links(); ?>
 							</div>
 						

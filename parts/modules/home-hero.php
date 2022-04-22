@@ -6,7 +6,7 @@
 			<div class="grid-x grid-padding-x">
 				<div class="cell small-12">
 					<div class="inner grid-x flex-dir-column align-justify">
-						<div class="text-wrap">
+						<div class="cell text-wrap">
 							<h1 class="white"><?php the_sub_field('heading');?></h1>
 							<p class="white large-text"><?php the_sub_field('text');?></p>
 							<?php 

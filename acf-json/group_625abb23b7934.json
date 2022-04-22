@@ -209,6 +209,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_6261768494ef8",
+                            "label": "Form Heading",
+                            "name": "form_heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_625abe0fd8095",
                             "label": "Form ID",
                             "name": "form_id",
@@ -449,6 +468,25 @@
                             "default_value": "",
                             "layout": "horizontal",
                             "return_format": "value"
+                        },
+                        {
+                            "key": "field_62617bb3ab3a2",
+                            "label": "H2 Heading",
+                            "name": "h2_heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         },
                         {
                             "key": "field_625abb23c195f",
@@ -914,5 +952,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1650204870
+    "modified": 1650555842
 }

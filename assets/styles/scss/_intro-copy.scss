@@ -1,11 +1,18 @@
 .intro-copy {
-	padding-top: 4.1rem;
+	padding-top: 2rem;
 	padding-bottom: 2.2rem;
+	@include breakpoint(medium) {
+		padding-top: 4.1rem;
+	}
 &.no-bp {
 	padding-bottom: 0;
 }
 	h3 {
 		margin-bottom: 1.15rem;
+	}
+	p {
+		font-size: rem-calc(22);
+		line-height: 1.4;
 	}
 	img {
 		margin-top: 1rem;

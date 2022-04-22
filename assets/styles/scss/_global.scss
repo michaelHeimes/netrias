@@ -50,22 +50,45 @@ button,
 .button {
 	text-transform: uppercase;
 	font-weight: 800;
-	letter-spacing: .2em;
+	letter-spacing: .1em;
 }
 
 .grid-card {
+	margin-bottom: 20px;
+	article {
+		height: 100%;
+	}
 	.inner {
 		width: 100%;
 		box-shadow: 0px 4px 20px rgba(84, 85, 86, 0.15);
 		border-radius: 5px;
 		overflow: hidden;
+		transition: box-shadow .3s ease;
 	}
-	margin-bottom: 20px;
+	
+	a {
+		color: $black;
+		height: 100%;
+		&:hover {
+			color: $black;
+		}
+		&:hover {
+			.inner {
+				box-shadow: 0px 4px 20px rgba(84, 85, 86, 0.35)
+			}	
+			svg g {
+				stroke: $primary;
+			}
+		}
+	}
 }
 
 /*********************
 TYPOGRAPHY
 *********************/
+h1, h2, h3, h4, h5, h6, p {
+	overflow-wrap: normal;
+}
 .large-text,
 .large-text p {
 	font-size: rem-calc(22);

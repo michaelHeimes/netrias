@@ -1,7 +1,7 @@
 .home-hero {
 	.inner {
 		min-height: 100vh;
-		padding-top: 10rem;
+		padding-top: 7rem;
 		padding-bottom: 6.5rem;
 		@include breakpoint(medium) {
 			padding-top: 17rem;
@@ -11,7 +11,10 @@
 		max-width: 800px;
 		padding-bottom: 3rem;
 		h1 {
-			font-size: rem-calc(52);
+			font-size: rem-calc(45);
+			@include breakpoint(medium) {
+				font-size: rem-calc(52);
+			}
 		}
 		.link-wrap {
 			padding-top: 1.4rem;
@@ -23,6 +26,7 @@
 		}
 		.left {
 			padding-right: 1.375rem;
+			margin-bottom: .5rem;
 			.title {
 				font-weight: 800;
 				font-size: rem-calc(20px);

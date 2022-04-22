@@ -8,6 +8,9 @@ function joints_theme_support() {
 	
 	// Default thumbnail size
 	set_post_thumbnail_size(125, 125, true);
+	
+	// Custom Image Sizes
+	add_image_size( 'news-thumb', 610, 330, true );
 
 	// Add RSS Support
 	add_theme_support( 'automatic-feed-links' );

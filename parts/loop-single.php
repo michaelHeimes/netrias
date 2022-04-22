@@ -4,8 +4,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-						
+<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">	
 	<header class="article-header page-banner banner has-bg grid-x align-middle">
 		<div class="bg secondary-bg"></div>
 		<div class="cell">
@@ -19,7 +18,6 @@
 			</div>
 		</div>
     </header> <!-- end article header -->
-					
     <section class="entry-content" itemprop="text">
 		<div class="grid-container">
 			<div class="grid-x grid-padding-x">
@@ -29,10 +27,4 @@
 			</div>
 		</div>
 	</section> <!-- end article section -->
-						
-	<footer class="article-footer">
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jointswp' ), 'after'  => '</div>' ) ); ?>
-		<p class="tags"><?php the_tags('<span class="tags-title">' . __( 'Tags:', 'jointswp' ) . '</span> ', ', ', ''); ?></p>	
-	</footer> <!-- end article footer -->
-																			
 </article> <!-- end article -->

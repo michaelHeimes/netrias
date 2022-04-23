@@ -10,7 +10,7 @@ $loop = new WP_Query( $args ); $row = get_row_index();?>
 <section class="career-tabs secondary-bg">
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x">
-			<div class="cell small-12 tablet-10 tablet-offset-1 large-8 large-offset-2">
+			<div class="of-x-auto cell small-12 tablet-10 tablet-offset-1 large-8 large-offset-2">
 				<ul class="tabs" data-tabs id="career-tabs-<?php echo $row;?>">
 				<?php $postTabCount = 0; while ( $loop->have_posts() ) : $postTabCount++; $loop->the_post();?>
 					<li class="tabs-title<?php if($postTabCount == 1):?> is-active<?php endif;?>">
@@ -18,6 +18,8 @@ $loop = new WP_Query( $args ); $row = get_row_index();?>
 					</li>
 				<?php endwhile;?>
 				</ul>
+			</div>
+			<div class="cell small-12 tablet-10 tablet-offset-1 large-8 large-offset-2">
 				<div class="tabs-content" data-tabs-content="career-tabs-<?php echo $row;?>">
 					<?php $postContentCount = 0; while ( $loop->have_posts() ) : $postContentCount++; $loop->the_post();?>
 						<div class="tabs-panel<?php if($postContentCount == 1):?> is-active<?php endif;?>" id="panel-<?php echo $postContentCount ;?>">

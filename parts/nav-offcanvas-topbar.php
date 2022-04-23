@@ -21,7 +21,7 @@
 					<?php 
 					$image = get_field('header_logo', 'option');
 					if( !empty( $image ) ): ?>
-					    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					    <img class="style-svg" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 					<?php endif; ?>
 				</a></li>
 			</ul>

@@ -602,6 +602,25 @@
                                     "maxlength": ""
                                 },
                                 {
+                                    "key": "field_6262f6f4950fb",
+                                    "label": "Heading",
+                                    "name": "heading",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 2,
+                                    "new_lines": ""
+                                },
+                                {
                                     "key": "field_625b0d193ee63",
                                     "label": "Copy",
                                     "name": "copy",
@@ -952,5 +971,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1650555842
+    "modified": 1650653128
 }

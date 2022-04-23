@@ -11,8 +11,11 @@
 		margin-bottom: 1.15rem;
 	}
 	p {
-		font-size: rem-calc(22);
+		font-size: rem-calc(18);
 		line-height: 1.4;
+		@include breakpoint(medium) {
+			font-size: rem-calc(22);
+		}
 	}
 	img {
 		margin-top: 1rem;

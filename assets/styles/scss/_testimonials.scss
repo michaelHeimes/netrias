@@ -21,23 +21,45 @@
 		nav {
 			padding-top: 2.7rem;
 			padding-bottom: 2rem;
+			> div {
+				cursor: pointer;
+				svg path {
+					transition: fill .3s ease;
+				}
+				&:hover {
+					svg path {
+						fill: $primary-light;
+					}
+				}
+			}
 			.swiper-button-prev {
 				margin-right: 1.3rem;
 			}
 		}
 	}
 	.testimonial-slider {
-		max-width: 630px;
+		max-width: calc(100% - 42px);
+		@include breakpoint(medium) {
+			max-width: 500px;
+		}
+		@include breakpoint(large) {
+			max-width: 630px;
+		}
 		.swiper-slide {
 			border-radius: 5px;
 			.inner {
-				padding: 3.3rem 5rem 3.15rem;
+				padding: 1.65rem 1.5rem 1.7rem;
+				@include breakpoint(medium) {
+					padding: 3.3rem 5rem 3.15rem;
+				}
 			}
 			.img-wrap {
-				margin-top: 2.1rem;
 				border-radius: 100%;
 				overflow: hidden;
 				max-width: 106px;
+				@include breakpoint(medium) {
+					margin-top: 2.1rem;
+				}
 			}
 		}
 	}

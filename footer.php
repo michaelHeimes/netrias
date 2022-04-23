@@ -17,7 +17,7 @@
 								$image = get_field('footer_logo', 'option');
 								if( !empty( $image ) ): ?>
 								<div class="footer-logo">
-									<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+									<img class="style-svg" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								</div>
 								<?php endif; ?>
 								<nav role="navigation" class="hide-for-medium">

@@ -48,6 +48,7 @@ header.header {
 		}
 		
 		li.logo {
+			padding-top: 0.6rem;
 			max-width: 119px;
 			@include breakpoint(medium) {
 				max-width: 160px;
@@ -74,7 +75,7 @@ header.header {
 				a {
 					color: $white;
 					text-transform: uppercase;
-					font-weight: 800;
+					font-weight: 600;
 					line-height: 1.25;
 					@include breakpoint(large) {
 						padding: 1.9rem 1rem 1.25rem;
@@ -83,7 +84,7 @@ header.header {
 						padding: 2.3rem 1.7rem 1.7rem;
 					}					
 					@include breakpoint(xxlarge) {
-						padding: 3.15rem 2.6rem 2.6rem;
+						padding: 3.05rem 2.6rem 2.6rem;
 					}
 					span {
 						display: inline-block;
@@ -103,9 +104,24 @@ header.header {
 					background-color: $white;
 				}	
 			}
-				
+			&:not(.green-button-link) {
+				a:hover {
+					color: $primary-light;
+				}
+			}	
+			&.green-button-link,
+			&.contact-link {
+				a {
+					font-weight: 800;
+				}
+			}
 			&.green-button-link a {
 				background-color: $primary;
+				transition: background-color .3s ease;
+
+				&:hover {
+					background-color: $primary-dark;
+				}
 			}
 				
 			&.menu-item-has-children {
@@ -126,22 +142,7 @@ header.header {
 // 						background-image: url(../images/chev-down-white.svg);
 					}
 					
-				}
-				
-				ul.submenu {
-					li {
-						a {
-
-							
-						&:hover {
-
-						}
-							
-						}
-						
-					}
-				}
-	
+				}	
 			}
 							
 			}
@@ -207,7 +208,7 @@ header.header {
 // Off canvas mods
 body {
 	#off-canvas {
-		background-color: #808080;
+		background-color: rgba(0,0,0,.5);
 		display: none;
 		min-height: 100vh;
 		ul#offcanvas-nav.menu {
@@ -220,6 +221,12 @@ body {
 			li {
 			&:not(.green-button-link) {
 				margin: 0.45rem 0;				
+			}
+			&.green-button-link,
+			&.contact-link {
+				a {
+					font-weight: 800;
+				}
 			}
 			&.green-button-link {
 				margin-top: 2.9rem;
@@ -235,6 +242,7 @@ body {
 					line-height: 1.15;
 					text-transform: uppercase;
 					text-align: center;
+					font-weight: 600;
 				}
 				span {
 					display: inline-block;

@@ -46,6 +46,14 @@ GLOBAL STYLES
 	background-color: $secondary;
 }
 
+.of-x-auto {
+	overflow-x: auto;
+}
+
+svg {
+	max-width: 100%;
+}
+
 button,
 .button {
 	text-transform: uppercase;
@@ -91,8 +99,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .large-text,
 .large-text p {
-	font-size: rem-calc(22);
+	font-size: rem-calc(18);
 	line-height: 1.4; 
+	@include breakpoint(medium) {
+		font-size: rem-calc(22);
+	}
 }
 .small-caps {
 	font-size: rem-calc(16);

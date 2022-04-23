@@ -149,10 +149,10 @@ $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
     'h1': ('font-size': 32),
-    'h2': ('font-size': 26),
+    'h2': ('font-size': 24),
     'h3': ('font-size': 22),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
+    'h4': ('font-size': 16),
+    'h5': ('font-size': 16),
     'h6': ('font-size': 16),
   ),
   medium: (
@@ -808,7 +808,7 @@ $tab-background-active: transparent;
 $tab-active-color: $primary-color;
 $tab-item-font-size: rem-calc(16);
 $tab-item-background-hover: transparent;
-$tab-item-padding: 1.25rem 1.5rem;
+$tab-item-padding: 1.25rem .4rem;
 $tab-content-background: transparent;
 $tab-content-border: transparent;
 $tab-content-color: $body-font-color;

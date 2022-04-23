@@ -21,8 +21,16 @@
 		}
 	}
 	.bottom {
+		.link {
+			transition: color .3s ease;
+		}
 		a {
 			color: $white;
+		&:hover {
+			.link {
+				color: $primary-light;
+			}
+		}
 		}
 		.left {
 			padding-right: 1.375rem;
@@ -30,9 +38,6 @@
 			.title {
 				font-weight: 800;
 				font-size: rem-calc(20px);
-			}
-			.link {
-				
 			}
 		}
 		.img-wrap {

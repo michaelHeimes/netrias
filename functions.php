@@ -46,6 +46,9 @@ require_once(get_template_directory().'/functions/disable-gutenberg.php');
 // Disable Single Post
 require_once(get_template_directory().'/functions/no-single-post.php'); 
 
+// Slugify a string
+require_once(get_template_directory().'/functions/slugify.php'); 
+
 // Add Page Slug to Body Class
 // require_once(get_template_directory().'/functions/page-slug-body-class.php');
 

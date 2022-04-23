@@ -4,18 +4,32 @@
 	.tabs-title:not(.is-active) a {
 		color: $white;
 	}
+	.tabs-panel {
+		@include breakpoint(small down) {
+			padding: 1.6rem 0 1.6rem;
+		}
+	}
 	.tabs-content {
 		color: $white;
 		h2 {
-			margin-bottom: 1.35rem;
+			margin-bottom: 1.15rem;
+			@include breakpoint(medium) {
+				margin-bottom: 1.35rem;
+			}
 		}
 		p {
-			font-size: rem-calc(22);
+			font-size: rem-calc(18);
 			line-height: 1.4; 
 			margin-bottom: 0;
+			@include breakpoint(medium) {
+				font-size: rem-calc(22);
+			}
 		}
 		.btn-wrap {
-			padding-top: 3rem;
+			padding-top: 2.9rem;
+			@include breakpoint(medium) {
+				padding-top: 3rem;
+			}
 		}
 	}
 }

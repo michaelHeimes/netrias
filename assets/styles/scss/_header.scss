@@ -99,11 +99,11 @@ header.header {
 					}
 				}
 				
-			&.current-menu-item {
-				a span:after {
-					background-color: $white;
-				}	
-			}
+			// &.current-menu-item {
+			// 	a span:after {
+			// 		background-color: $white;
+			// 	}	
+			// }
 			&:not(.green-button-link) {
 				a:hover {
 					color: $primary-light;

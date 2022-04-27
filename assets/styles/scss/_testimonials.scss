@@ -1,6 +1,9 @@
 .testimonials {
-	padding-top: 3.75rem;
+	padding-top: 0;
 	padding-bottom: 3.75rem;
+	@include breakpoint(medium) {
+		padding-top: 3.75rem;
+	}
 	overflow: hidden;
 	.left {
 		padding-top: 3.4rem;

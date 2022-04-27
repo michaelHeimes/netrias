@@ -7,8 +7,11 @@
 &.no-bp {
 	padding-bottom: 0;
 }
-	h3 {
-		margin-bottom: 1.15rem;
+	h2 {
+		margin-bottom: 0.9rem;
+		@include breakpoint(medium) {
+			margin-bottom: 1.15rem;
+		}
 	}
 	p {
 		font-size: rem-calc(18);

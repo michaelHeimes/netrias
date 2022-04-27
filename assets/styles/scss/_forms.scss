@@ -13,6 +13,7 @@ body .form-wrap {
 			font-size: rem-calc(18);
 			line-height: 1.4;
 			margin-bottom: 0.4rem;	
+			padding-left: 1px;
 		}
 		input:not([type="submit"]),
 		select,
@@ -24,6 +25,14 @@ body .form-wrap {
 			padding-top: 3.55rem;
 			padding-bottom: 4.8rem;
 			text-align: right;
+		}
+	}
+	@media (max-width: 640px) {
+		.gform_wrapper.gravity-theme .ginput_complex span:nth-child(1) {
+			margin-bottom: 21px;
+		}
+		.gform_wrapper.gravity-theme .ginput_complex span:nth-child(2) {
+			margin-bottom: 0;
 		}
 	}
 }

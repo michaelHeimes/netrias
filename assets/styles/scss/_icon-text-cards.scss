@@ -1,6 +1,10 @@
 .icon-text-cards {
-	padding-top: 3.55rem;
+	padding-top: 1.5rem;
 	padding-bottom: .5rem;
+	@include breakpoint(medium) {
+		padding-top: 3.55rem;
+		padding-bottom: .5rem;
+	}
 	.single-card {
 		.inner {
 			max-width: 350px;

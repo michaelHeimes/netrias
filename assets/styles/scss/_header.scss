@@ -22,7 +22,7 @@ header.header {
 	transition: transform .5s ease;
 	padding: 1.1rem 1rem;
 	@include breakpoint(large) {
-		padding-right: 0;
+		padding: 0 0 0 1.1rem;
 	}
 	@include breakpoint(xlarge) {
 		padding: 0 0 0 2.6rem;
@@ -48,8 +48,8 @@ header.header {
 		}
 		
 		li.logo {
-			padding-top: 0.6rem;
 			max-width: 119px;
+			transform: translateY(.6rem);
 			@include breakpoint(medium) {
 				max-width: 160px;
 			}

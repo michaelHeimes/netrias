@@ -48,7 +48,7 @@
 							<?php else:?>
 								<div class="title-dates">
 									<h3 class="h5"><?php the_title();?></h3>
-									<div class="h3"><?php the_field('dates');?></div>
+									<div class="h5"><?php the_field('dates');?></div>
 								</div>
 								<div class="description">
 									<p><?php the_field('description');?></p>

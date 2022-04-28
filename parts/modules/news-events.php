@@ -1,4 +1,4 @@
-<section class="news-events gray-bg">
+<!-- <section class="news-events gray-bg">
 	<div class="grid-container">
 		<div class="top grid-x grid-padding-x medium-flex-dir-row-reverse">
 			<div class="cell small-12 medium-shrink">
@@ -72,4 +72,4 @@
 		wp_reset_postdata(); 
 		?>							
 	</div>
-</section>
+</section> -->

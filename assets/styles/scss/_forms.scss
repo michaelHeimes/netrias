@@ -1,5 +1,10 @@
 body .form-wrap {
 	padding-top: 2.8rem;
+	.gform_wrapper .gfield_required {
+		font-size: 1.2em;
+		line-height: 0;
+		padding-left: 0;
+	}
 	.gform_wrapper.gravity-theme {
 		padding-top: 3.2rem;
 		.gform_fields {
